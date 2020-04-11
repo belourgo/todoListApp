@@ -1,0 +1,29 @@
+{
+    "name": "Categorie",
+    "fields": [
+        {
+            "fieldName": "libelle",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "todo",
+            "otherEntityRelationshipName": "categorie",
+            "relationshipName": "todo"
+        }
+    ],
+    "changelogDate": "20200411153700",
+    "entityTableName": "categorie",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "todoListApp",
+    "applications": "*",
+    "microserviceName": "todoListApp"
+}

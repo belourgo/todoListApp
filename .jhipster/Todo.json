@@ -1,0 +1,34 @@
+{
+    "name": "Todo",
+    "fields": [
+        {
+            "fieldName": "tache",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "Boolean"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "categorie",
+            "otherEntityRelationshipName": "todo",
+            "relationshipName": "categorie",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200411153600",
+    "entityTableName": "todo",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "todoListApp",
+    "applications": "*",
+    "microserviceName": "todoListApp"
+}
